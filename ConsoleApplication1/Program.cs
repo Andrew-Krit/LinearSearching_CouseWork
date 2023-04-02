@@ -1,5 +1,6 @@
 ﻿using System;
-using ConsoleApplication1.Classes;
+using System.Collections.Generic;
+using System.IO;
 
 namespace ConsoleApplication1
 {
@@ -14,6 +15,20 @@ namespace ConsoleApplication1
             foreach (var element in array)
             {
                 Console.WriteLine(element);
+            }
+        }
+
+        private static class FileReader
+        {
+            public static IEnumerable<string> ReadElementsFromFile(string filePath)
+            {
+                var streamReader = new StreamReader(filePath);
+
+                var text = streamReader.ReadToEnd();
+
+                var objectArray = text.Split(' ');
+            
+                return objectArray;
             }
         }
     }
