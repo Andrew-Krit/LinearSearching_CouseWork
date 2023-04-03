@@ -5,3 +5,10 @@ C:\Users\Sicknezz\RiderProjects\ConsoleApplication1\ConsoleApplication1\obj\Debu
 C:\Users\Sicknezz\RiderProjects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
 C:\Users\Sicknezz\RiderProjects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\Sicknezz\RiderProjects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Programs\GitHub\feelingSicknezz\LinearSorting_CouseWork\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Programs\GitHub\feelingSicknezz\LinearSorting_CouseWork\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Programs\GitHub\feelingSicknezz\LinearSorting_CouseWork\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+D:\Programs\GitHub\feelingSicknezz\LinearSorting_CouseWork\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.SuggestedBindingRedirects.cache
+D:\Programs\GitHub\feelingSicknezz\LinearSorting_CouseWork\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+D:\Programs\GitHub\feelingSicknezz\LinearSorting_CouseWork\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Programs\GitHub\feelingSicknezz\LinearSorting_CouseWork\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
