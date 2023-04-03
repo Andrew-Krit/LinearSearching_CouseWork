@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
+using System.Linq;
+using ConsoleApplication1.Classes;
 
 namespace ConsoleApplication1
 {
@@ -10,26 +10,44 @@ namespace ConsoleApplication1
         
         public static void Main(string[] args)
         {
-            var array = FileReader.ReadElementsFromFile(FilePath);
+            string[] array = FileReader.ReadElementsFromFile(FilePath).ToArray();
 
-            foreach (var element in array)
-            {
-                Console.WriteLine(element);
-            }
+            Console.WriteLine(string.CompareOrdinal("e","a"));
+
+            var a = Array.ConvertAll(array, e => int.Parse(e));
+            
+            ShowArrayElements(a);
+            a = LinearSearching(a);
+            ShowArrayElements(a);
         }
 
-        private static class FileReader
+        private static void ShowArrayElements(int[] array)
         {
-            public static IEnumerable<string> ReadElementsFromFile(string filePath)
+            foreach (var element in array)
             {
-                var streamReader = new StreamReader(filePath);
-
-                var text = streamReader.ReadToEnd();
-
-                var objectArray = text.Split(' ');
-            
-                return objectArray;
+                Console.Write($"{element} ");
             }
+            Console.WriteLine();
+        }
+        
+        private static int[] LinearSearching(int[] array)
+        {
+            var elements = array.ToArray();
+
+            for (var i = 0; i < elements.Length; i++)
+            {
+                for (var j = 0; j < elements.Length - 1; j++)
+                {
+                    if (elements[j] > elements[j + 1])
+                    {
+                        var savedElement = elements[j + 1];
+                        elements[j + 1] = elements[j];
+                        elements[j] = savedElement;
+                    }
+                }
+            }
+
+            return elements;
         }
     }
 }
