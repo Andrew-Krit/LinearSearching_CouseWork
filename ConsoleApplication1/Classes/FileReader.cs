@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace ConsoleApplication1.Classes
 {
     public static class FileReader
     {
-        public static IEnumerable<string> ReadElementsFromFile(string filePath)
+        public static int[] ReadElementsFromFile(string filePath)
         {
             var streamReader = new StreamReader(filePath);
 
@@ -13,7 +14,7 @@ namespace ConsoleApplication1.Classes
 
             var objectArray = text.Split(' ');
             
-            return objectArray;
+            return Array.ConvertAll(objectArray, str => int.Parse(str));;
         }
     }
 
